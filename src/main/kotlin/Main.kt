@@ -13,7 +13,14 @@ fun main(args: Array<String>) {
     print("Введите длину отрезка 3: ")
     val c = reader.nextDouble()
 
+    val result = if (a + b < c || a + c < b || b + c < a)
+        "Треугольника не существует"
+        else  "Треугольник существует"
+
+    print(result)
+
+    }
 
 
 
-}
+

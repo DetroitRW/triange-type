@@ -13,13 +13,32 @@ fun main(args: Array<String>) {
     print("Введите длину отрезка 3: ")
     val c = reader.nextDouble()
 
-    val result = if (a + b < c || a + c < b || b + c < a)
+    val result = if (a + b < c || a + c < b || b + c < a) {
         "Треугольника не существует"
-        else  "Треугольник существует"
+    } else  if (a != b || a != c || b != c) {
+        "Треугольник разносторонний"
 
-    print(result)
+    } else  if (a = b $$ a = c $$ b = c) {
+        "Треугольник равносторонний"
 
+    } else { "Треугольник равнобедренный"
     }
+    print(result)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

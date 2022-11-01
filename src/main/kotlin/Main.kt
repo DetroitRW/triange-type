@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    println("")
 
-    
-    println("Program arguments: ${args.joinToString()}")
+
+
 }

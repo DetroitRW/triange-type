@@ -5,13 +5,13 @@ fun main(args: Array<String>) {
     val reader = Scanner(System.`in`)
 
     print("Введите длину отрезка 1: ")
-    val отрезак1 = reader.nextDouble()
+    val a = reader.nextDouble()
 
     print("Введите длину отрезка 2: ")
-    val отрезок2 = reader.nextDouble()
+    val b = reader.nextDouble()
 
     print("Введите длину отрезка 3: ")
-    val отрезок3 = reader.nextDouble()
+    val c = reader.nextDouble()
 
 
 

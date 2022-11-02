@@ -16,15 +16,15 @@ fun main(args: Array<String>) {
     val result = if (a + b < c || a + c < b || b + c < a) {
                  "Треугольника не существует"
 
-    } else  if ((a != b) and (a != c) and (b != c)) {
+    } else if ((a != b) and (a != c) and (b != c)) {
                  "Треугольник разносторонний"
 
-      } else  if ((a == b) and (a == c) and (b == c)) {
+    } else if ((a == b) and (a == c) and (b == c)) {
                  "Треугольник равносторонний"
 
-        } else {
+    } else {
                  "Треугольник равнобедренный"
-          }
+    }
 
     print(result)
 }

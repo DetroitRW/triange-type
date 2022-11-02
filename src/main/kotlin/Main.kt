@@ -22,6 +22,9 @@ fun main(args: Array<String>) {
     } else if ((a == b) and (a == c) and (b == c)) {
                  "Треугольник равносторонний"
 
+    } else if (c * c == a * a + b * b || a * a == b * b + c * c || b * b == a * a + c * c ) {
+                 "Треугольник прямоугольный"
+
     } else {
                  "Треугольник равнобедренный"
     }

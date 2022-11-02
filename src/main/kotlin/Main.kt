@@ -5,13 +5,29 @@ fun main(args: Array<String>) {
     val reader = Scanner(System.`in`)
 
     print("Введите длину отрезка 1: ")
-    val a = reader.nextDouble()
+    var a = reader.nextDouble()
 
     print("Введите длину отрезка 2: ")
-    val b = reader.nextDouble()
+    var b = reader.nextDouble()
 
     print("Введите длину отрезка 3: ")
-    val c = reader.nextDouble()
+    var c = reader.nextDouble()
+
+    if (a > b) {
+        val t = a
+        a = b
+        b = a
+    }
+    if (a > c) {
+        val t = a
+        a = c
+        c = a
+    }
+    if (c > b) {
+        val t = c
+        c = b
+        b = c
+    }
 
     val result = if (a + b < c || a + c < b || b + c < a) {
         "Треугольника не существует"
@@ -19,7 +35,7 @@ fun main(args: Array<String>) {
     } else if ((a == b) and (a == c) and (b == c)) {
         "Треугольник равносторонний"
 
-    } else if (c * c == a * a + b * b || a * a == b * b + c * c || b * b == a * a + c * c ) {
+    } else if (c * c == a * a + b * b || a * a == b * b + c * c || b * b == a * a + c * c) {
         "Треугольник прямоугольный"
 
     } else if ((a != b) and (a != c) and (b != c)) {
@@ -29,7 +45,8 @@ fun main(args: Array<String>) {
         "Треугольник равнобедренный"
     }
 
-print(result)
+    print(result)
+
 }
 
 

@@ -16,26 +16,26 @@ fun main(args: Array<String>) {
     if (a > b) {
         val t = a
         a = b
-        b = a
+        b = t
     }
     if (a > c) {
         val t = a
         a = c
-        c = a
+        c = t
     }
-    if (c > b) {
+    if (c < b) {
         val t = c
         c = b
-        b = c
+        b = t
     }
 
-    val result = if (a + b < c || a + c < b || b + c < a) {
+    val result = if (a + b < c) {
         "Треугольника не существует"
 
     } else if ((a == b) and (a == c) and (b == c)) {
         "Треугольник равносторонний"
 
-    } else if (c * c == a * a + b * b || a * a == b * b + c * c || b * b == a * a + c * c) {
+    } else if (c * c == a * a + b * b) {
         "Треугольник прямоугольный"
 
     } else if ((a != b) and (a != c) and (b != c)) {
